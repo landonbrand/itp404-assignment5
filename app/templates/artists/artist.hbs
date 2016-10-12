@@ -1,0 +1,6 @@
+<h1>Songs</h1>
+
+This artist has {{model.length}} songs.
+{{#each model as |song|}}
+  {{song-item song=song}}
+{{/each}}

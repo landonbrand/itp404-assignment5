@@ -1,0 +1,10 @@
+<div style ="float:left;">
+  <h1>Artists</h1>
+  {{#each model as |artist|}}
+    <h3>{{#link-to 'artists.artist' artist.id}}{{artist.name}}{{/link-to}}</h3>
+  {{/each}}
+</div>
+
+<div style="float:left;">
+  {{outlet}}
+</div>

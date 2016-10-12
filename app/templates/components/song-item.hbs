@@ -1,0 +1,13 @@
+{{yield}}
+{{#if isPopular}}
+  <h3 style="color:red;">{{song.title}}</h3>
+{{else}}
+  <h3>{{song.title}}</h3>
+{{/if}}
+{{#if isExpensive}}
+  <p>$$</p>
+{{else}}
+  <p>$</p>
+{{/if}}
+<p>{{song.playCount}} plays</p>
+<br/>
