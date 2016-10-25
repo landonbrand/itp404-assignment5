@@ -1,5 +1,6 @@
 <div style ="float:left;">
   <h1>Artists</h1>
+  {{#link-to 'artists.new'}}new artist{{/link-to}}
   {{#each model as |artist|}}
     <h3>{{#link-to 'artists.artist' artist.id}}{{artist.name}}{{/link-to}}</h3>
   {{/each}}
